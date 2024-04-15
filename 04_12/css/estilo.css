@@ -1,0 +1,44 @@
+body{
+    background-color: aliceblue;
+}
+
+h2{
+    color:aquamarine;
+}
+
+.vermelho{
+    color: red;
+
+}
+
+.azul{
+    color:blue
+
+}
+
+.verde{
+    color: green;
+}
+
+table, th, td, tr{
+    border: 1px solid black;
+    border-collapse:collapse;
+}
+
+.frutas {
+    background-color: aquamarine;
+    
+}
+
+.verduras {
+    background-color: blueviolet;
+}
+
+.grao {
+    background-color: brown;
+}
+
+.saudacao{
+    color: orchid;
+    text-align: center;
+}
