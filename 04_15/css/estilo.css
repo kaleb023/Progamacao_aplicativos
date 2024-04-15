@@ -1,0 +1,52 @@
+/*padronização para carregamento ingual nos navegadores*/
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+div{
+    width: 300px;
+    margin: auto;
+    background-color: bisque;
+}
+
+.azul{
+    background-color: blue;
+}
+
+.vermelho{
+    background-color: red;
+}
+
+.verde{
+    background-color: greenyellow;
+}
+.container{
+    width: 100%;
+    background-color: antiquewhite;
+}
+.estado{
+    width: 33.333%;
+    float: left;
+}
+
+.divinline{
+    width: 33.1%;
+    display: inline-block;
+}
+
+.containerflex{
+    display: flex;
+}
+
+.estadoflex{
+    width: 33%;
+}
+
+.grid-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 33% 33% 33%;
+}
