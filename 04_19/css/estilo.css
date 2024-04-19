@@ -1,0 +1,89 @@
+/* Padronização carregamento */
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+body{
+    background-color: antiquewhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+#azul{
+    color: mediumaquamarine;
+}
+
+#navegacao{
+    background-color: azure;
+    border-bottom: 1px solid #d8d8d8;
+    height: 45px;
+}
+
+#area_menu{
+    width: 720px;
+    margin: 0 auto;
+}
+
+#logo{
+    float: left;
+}
+
+#menu{
+    float: right;
+    padding: 10px 0;
+}
+
+#menu a:visited{
+    color: cornflowerblue;
+}
+
+#menu a:link{
+    color: cornflowerblue;
+}
+#menu a{
+    text-decoration: none;
+    padding: 5px;
+}
+
+#menu a:hover{
+    color: aliceblue;
+    background-color: antiquewhite;
+}
+
+#area-principal{
+    width: 720px;
+    margin: 55px auto 10px auto;
+}
+
+#postagens{
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+h2{
+    color: blanchedalmond;
+}
+
+.data_postagem{
+    font-size: 14px;
+    border-bottom: 1px solid;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.img-postagens{
+    max-width: 100%;
+    border-radius: 25px;
+}
+
+.postado{
+    border-top: 3px solid;
+    padding-left: 10px;
+    display: block;
+    margin-top: 15px;
+
+}
