@@ -1,0 +1,71 @@
+.exemplo_background{
+    /* endereço da imagem */
+    background-image: url("../img/ddd.png");
+    /* repetição da imagem na vertical e -x na horizontal*/
+    /* "no-repeat" não a repetição da imagem*/
+    background-repeat: no-repeat;
+    /* Colocando a posiçao da imagem */
+    background-position: center;
+    /* Imagem descer na rolagem junto da pagina */
+    background-attachment: fixed;
+    
+}
+
+/* Colocar bordar */
+.pontilhado{
+    border-style: dotted;
+}
+
+.tracejado{
+    border-style: dashed;
+}
+
+.borda_maior{
+    border-style: solid;
+    border-width: 2px;
+}
+
+.borda_top{
+    border-top: 2px solid rgb(0, 0, 0);
+}
+
+.principal{
+    background-color: burlywood;
+}
+
+.conteudo{
+    background-color: pink;
+    margin: 0px;
+    height: 300px;
+    width: 400px;
+    /* Margen interna do conteudo */
+    padding: 50px;
+}
+
+
+.conteudo_dropdown{
+    display: none;
+    background-color: grey;
+    width: 100px;
+    color: white;
+    
+    
+}
+
+.dropdown:hover .conteudo_dropdown{
+    display: block;
+}
+/* coloca uma linha e remove as bolinhas da listas */
+.conteudo_dropdown li{
+    border-bottom: 1px solid white;
+    list-style: none;
+    padding: 5px 2px;
+}
+
+.conteudo_dropdown ul{
+    padding: 0;
+}
+
+.conteudo_dropdown li:hover{
+    background-color: violet;
+}
