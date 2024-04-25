@@ -1,0 +1,61 @@
+/* Alinhamento do texto */
+.alinhado{
+    text-align: justify;
+    width: 500px;
+}
+
+/* Linha em cima do texto */
+.linha_cima{
+    text-decoration: overline;
+}
+
+/* Linha em baixo do texto */
+.linha_baixo{
+    text-decoration: underline;
+}
+
+/* Linha em cima e em baixo do texto */
+.linha_cima_baixo{
+    text-decoration: overline underline;
+}
+
+/* Texto em maiusculo */
+.maiusculo{
+    text-transform: uppercase;
+}
+
+/* Texto em minusculo */
+.minusculo{
+    text-transform: lowercase;
+}
+
+/* Espaço entre palavras */
+.espacadas{
+    word-spacing: 10px;
+}
+
+/* Fonte da pagina */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Pegar uma fonte fora do css */
+.outra_fonte{
+    font-family: "Lugrasimo", cursive;
+}
+
+/* Texto em italico */
+.italico{
+    font-style: italic;
+}
+
+/* Texto em negrito */
+.bold{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.material-symbols-outlined{
+    color: antiquewhite;
+    font-size: 220px;
+}
