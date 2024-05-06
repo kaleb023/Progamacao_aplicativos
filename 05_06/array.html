@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<script>
+    //Array em JS é um conjunto de valores armazenados podendo ou não se do mesmo tipo
+    let cores = Array(" Amarelo", " Verde", " Azul", " Vermelho" )
+    //Para acessar um posiçao é necessario colocar entre colchetes o número da posição
+    //Arrays começam sempre na posição 0 por padrão
+    cores[0] = "Verde"
+    document.write(cores)
+    console.log(cores)
+    console.log(cores.length) //Acessando tamanho do array
+
+    cores.push("Magenta") //Acrescenta ao final do array um elemento
+    console.log(cores) 
+    cores.pop() //Remove o ultimo elemento do array
+    console.log(cores)
+    cores.unshift("Ciano") //Acrescenta no inicio do array
+    console.log(cores)
+    cores.shift() //Remove o primeiro elemento da array
+    console.log(cores)
+    
+    let num = 0
+    document.write("<ul>")
+    
+    //Estrutura de repetição que é delimitado por uma condilçao verdadeiro ou falso
+    while (num < cores.length){
+        document.write("<li>"+cores[num]+"</li>")
+        num++
+    }
+    document.write("<ul>")
+
+
+    // Outra forma de criar um array
+    let frutas = ["Maça", "Pessego", "Kiwi", "Mamão"]
+    console.log(frutas)
+
+    document.write("<ol>")
+    for(let i = 0; i< frutas.length;i++){
+        document.write("<li>"+frutas[i]+"</li>")
+    }
+    document.write("<ol>")
+ 
+    let html = "<div>"
+    html += "<h1>Olá Pessoas</h1>"
+    html += "</div>"
+    document.write(html)
+    console.log(html)
+
+    let tabela = "<tr><th>Nome</th><th>Idade</th></tr>"
+
+    let pessoas = [
+        ["José",18],
+        ["Pratick",20],
+        ["Natalia",22]
+    ]
+
+    tabela +="<tr><td>"+pessoas[0][0]+"</td><td>"+pessoas[0][1]+"</td></tr>"
+</script>
+<body>
+    <table id="pessoas">
+
+    </table>
+    <script>
+        //getElementById encontra um elemento com o id especifico
+        //innerHTML acrescenta ao elemento o script gerado
+        document.getElementById("pessoas").innerHTML = tabela
+    </script>
+   
+</body>
+</html>
