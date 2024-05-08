@@ -1,0 +1,38 @@
+#alerta{
+    background-color: red;
+    color: whitesmoke;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+#ceu{
+    background-color: blue;
+    font-size: 20px;
+}
+
+.nublado{
+    background-color: black;
+    color: white;
+}
+
+.ceulimpo{
+    background-color: aqua;
+    font-size: 20px;
+}
+
+#cores{
+    height: 300px;
+    width: 300px;
+}
+
+.verde{
+    background-color: greenyellow;
+}
+
+.vermelho{
+    background-color: red;
+}
+
+.azul{
+    background-color: blue;
+}

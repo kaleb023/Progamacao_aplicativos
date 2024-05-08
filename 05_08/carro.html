@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Carro{
+            constructor(marca,placa,cor,ano){
+                this.marca = marca
+                this.placa = placa
+                this.cor = cor
+                this.ano = ano
+            }
+        }
+        let carros = []
+        let uno = new Carro("fiat", "XXY-4404", "verde", 2001)
+        carros.push(uno)
+        let fusca = new Carro("volkswagen", "ZWA-3321", "amarelo", 1998)
+        carros.push(fusca)
+
+
+        console.log(carros)
+
+        function carregarCarros(){
+            let html = "<tr><th>marca</th><th>placa</th><th>cor</th><th>ano</th></tr>"
+
+            for(let i = 0; i < carros.length;i++){
+                html += "<tr>"
+                html += "<td>"+carros[i].marca+"</td>"
+                html += "<td>"+carros[i].placa+"</td>"
+                html += "<td>"+carros[i].cor+"</td>"
+                html += "<td>"+carros[i].ano+"</td>"
+                html += "</tr>"
+
+            }
+            document.getElementById("listaCarros").innerHTML = html
+        }
+
+        function cadastrarCarro(){
+            let marca = document.getElementById("marca").value
+            let placa = document.getElementById("placa").value
+            let cor = document.getElementById("cor").value
+            let ano = parseFloat(document.getElementById("ano").value)
+
+            let carro = new Carro(marca,placa,cor,ano)
+
+            carros.push(carro)
+            carregarCarros()
+        }
+    </script>
+</head>
+<body onload="carregarCarros()">
+    <h1>carros</h1>
+    <table id="listaCarros">
+
+    </table>
+    <div id="cadastro">
+        <label for="">marca</label>
+        <input type="text" name="" id="marca">
+        <br>
+        <label for="">placa</label>
+        <input type="text" name="" id="placa">
+        <br>
+        <label for="">cor</label>
+        <input type="text" name="" id="cor">
+        <br>
+        <label for="">ano</label>
+        <input type="text" name="" id="ano">
+        <br>
+        <button onclick="cadastrarCarro()">Cadastrar</button>
+        <br>
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<script>
+    function mensagem(){
+        alert("atenção")
+    }
+    function ceu(){
+        alert("Céu azul")
+        document.getElementById("ceu").innerHTML = "Céu nublado"
+        document.getElementById("ceu").classname = "nublado"
+    }
+    function ceulimpo(){
+        document.getElementById("ceu").innerHTML = "Céu azul"
+        document.getElementById("ceu").className = "ceulimpo"
+    }
+    function verde(){
+        document.getElementById("cores").className = "verde"
+    }
+    function vermelho(){
+        document.getElementById("cores").className = "vermelho"
+    }
+    function azul(){
+        document.getElementById("cores").className = "azul"
+    }
+</script>
+<body onload="azul()">
+    <div class="container">
+        <button id="alerta" onclick="mensagem()">Clique aqui</button>
+        <div id="ceu">Céu azul</div>
+        <input type="text" onblur="ceu()">
+        <div id="cores" onmouseover="verde()" onmouseout="vermelho()">
+            <h1>Cores</h1>
+
+        </div>
+    </div>
+</body>
+</html>
