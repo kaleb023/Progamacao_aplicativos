@@ -25,13 +25,8 @@
         ["Vitor", " Vitória"]
  
 ]
-document.write("<ol>")
-for(let i = 0; i< alunoCidade.length;i++){
-        document.write("<li>"+alunoCidade[i]+"</li>")
-     }    
-document.write("</ol>")
 
-let tabela = "<tr><th>Nome</th><th>Cidade</th></tr>"
+
 </script>
 
 <body>
@@ -39,7 +34,13 @@ let tabela = "<tr><th>Nome</th><th>Cidade</th></tr>"
 
     </table>
 
-    <script></script>
+    <script>
+        let tabela = "<tr><th>Nome</th><th>Cidade</th></tr>"
+        for (let i = 0; i<alunoCidade.length;i++){
+            tabela += "<tr><td>"+alunoCidade[i][0]+"</td><td>"+alunoCidade[i][1]+"</td></tr>"
+        }
+        document.getElementById("Aluno").innerHTML = tabela
+    </script>
     
 </body>
 </html>
