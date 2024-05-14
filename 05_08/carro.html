@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        import {Concessionaria} from Concessionaria
+    <script type="module">
+        import {Concessionaria} from './js/concessionaria.js'
+
+        window.onload = function(){
+            let novaConcessionaria = new Concessionaria()
+            novaConcessionaria.carregarCarros()
+
+            window.novaConcessionaria = novaConcessionaria
+
+        }
     </script>
+    <link rel="stylesheet" href="css/estilo.css">
         
     
 </head>
-<body onload="carregarCarros()">
+<body>
     <h1>carros</h1>
     <table id="listaCarros">
 
@@ -28,7 +37,7 @@
         <label for="">ano</label>
         <input type="text" name="" id="ano">
         <br>
-        <button onclick="cadastrarCarro()">Cadastrar</button>
+        <button onclick="window.novaConcessionaria.cadastrarCarro()">Cadastrar</button>
         <br>
         
     </div>
