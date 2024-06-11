@@ -12,9 +12,18 @@ class ParafusoController{
     create(req,res){
         const nome = req.body.nome
         
-        ParafusoModel.create(nome)
+        ParafusoModel.create(nome).then(
+            resposta => {
+                console.debug("Inserindo um parafuso");
+                res.status(resposta[0]).json(resposta[1])
+            }
+        ).catch(
+            resposta => {
+                console.debug("Erro: Inserindo um parafuso");
+                res.status(resposta[0]).json(resposta[1])
+            }
+        )
 
-        res.status(201).json("Parafuso criado")
     }
     
     read(req,res){
