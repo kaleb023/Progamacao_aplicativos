@@ -21,16 +21,28 @@ class ParafusoModel{
         
     }
 
+
+
     read(){
-        return this.parafusos;
+        let sql = `SELECT * FROM parafusos;`
+
+        return new Promise((resolve,reject)=>{
+            this.conexao.query(sql,(erro,retorno)=>{
+                if(erro){
+                    reject([400, erro])
+                }
+                resolve([201, retorno])
+
+            })           
+        }); 
     }
 
-    update(index,nome){
-        let parafuso = {
-            nome:nome
+    update(id_parafuso,nome){
+        let sql = `UPDATE parafusos SET nome="${nome}" WHERE id_parafuso="${id_parafuso}";`
+            ""
         }
         
-        this.parafusos[index] = parafuso;
+        
 
     }
 
